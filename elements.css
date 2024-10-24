@@ -1,0 +1,32 @@
+/* This file defines how custom elements will look like, setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! */
+
+/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
+.site-box {
+    text-align: center;
+    background-image: url(https://chii.nekoweb.org/img/chiichan.jpg); /* Only nekoweb URLs allowed, use full url to your site like https://example.nekoweb.org/images/coolbg.png */
+    background-repeat: no-repeat;
+    color: silver;
+    font-size: 12px;
+    box-sizing: border-box;
+    border: 3px solid silver;
+}
+
+.site-box .follow{
+    content: url(https://chii.nekoweb.org/arrow.gif);
+    opacity: 1 ;
+    margin-left: 140px;
+}
+
+
+
+.site-box > a > p {
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 0px;
+ 
+}
+
+
+
+.site-box > a > span {opacity: 0;}
+.site-box > a > .sitefeature {opacity: 0;}

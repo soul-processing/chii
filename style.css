@@ -1,0 +1,209 @@
+/* Global Styles */
+body {
+  width: 100%;
+  padding-bottom: 50px;
+  min-height: 101vh;
+  margin-top: 50px;
+  max-width: 100%;
+  margin: auto;
+  font-family: "ï¼­ï¼³ ï¼°ã‚´ã‚·ãƒƒã‚¯", "MS PGothic";
+  margin-bottom: 70px;
+  font-size: 16px;
+}
+
+input:hover, label:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #ff0000;
+}
+
+a:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+::selection {
+  color: white;
+  background: #ff0000;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ff0000;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff3d3d;
+}
+
+#main-content-body p,
+#main-content-body-date p {
+  white-space: pre-line;
+  margin: 0;
+}
+
+#main-content-body,
+#main-content-body-date {
+  gap: 10px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  max-width: 1074px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.piece-container {
+  width: 100%;
+  max-width: 350px; /* Set a max width for larger screens */
+  margin: 5px;
+  padding: 0;
+  margin-bottom: 5px;
+}
+
+.piece-container img {
+  width: 100%;
+  border: 1px solid rgb(255, 0, 0); /* Added from CSS 2 */
+}
+
+.music,
+.games {
+  border: 1px solid #ff0000;
+  margin-bottom: 10px;
+}
+
+.music img,
+.games img {
+  border: revert;
+  border-bottom: 1px solid #ff0000;
+}
+
+.content-column {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+#nav {
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  position: relative;
+  top: -2px;
+}
+
+audio {
+  position: relative;
+  padding: 3px 0;
+  left: 30px;
+  height: 26px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: white;
+}
+
+#header {
+  max-width: 100%;
+  margin: auto;
+  margin-bottom: 12px;
+}
+
+#nav-wrapper h1, #nav-wrapper ul {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0;
+  padding: 0;
+}
+
+#nav li {
+  display: inline;
+  padding: 0 3.5px;
+}
+
+/* Responsive Styles */
+@media only screen and (max-width: 1200px) {
+  #main-content-body,
+  #main-content-body-date {
+      flex-direction: column; /* Stack items vertically */
+      max-width: 100%;
+  }
+
+  .piece-container {
+      max-width: 100%; /* Full width on smaller screens */
+  }
+
+  .content-column {
+      max-width: 100%; /* Full width on smaller screens */
+  }
+
+  #header {
+      max-width: 100%; /* Full width on smaller screens */
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  body {
+      padding: 10px; /* Add padding on smaller screens */
+  }
+
+  .piece-container {
+      width: 100%; /* Full width on smaller screens */
+  }
+
+  .content-column {
+      width: 100%; /* Full width on smaller screens */
+      flex-direction: column; /* Stack items vertically */
+      max-width: 100%; 
+  }
+
+  audio {
+      left: 0; /* Adjust position of audio controls */
+  }
+
+  #nav-wrapper h1, #nav-wrapper ul {
+      display: block; /* Stack navigation items vertically */
+      text-align: center;
+  }
+
+  #nav li {
+      display: block;
+      padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+      padding: 10px; /* Add padding on smaller screens */
+      width: 100%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+      padding: 10px; /* Reduce padding on very small screens */
+  }
+
+  .piece-container {
+      margin-bottom: 10px; /* Increase margin for spacing */
+  }
+
+  audio {
+      height: 20px; /* Adjust height of audio controls */
+  }
+
+  #nav-wrapper h1, #nav-wrapper ul {
+      font-size: 14px; /* Reduce font size for smaller screens */
+  }
+}
